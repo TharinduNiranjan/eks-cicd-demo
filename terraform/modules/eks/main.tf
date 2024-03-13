@@ -6,8 +6,6 @@ resource "aws_eks_cluster" "eks" {
   version  = "1.28"
   vpc_config {
     subnet_ids = var.private_subnet
-    # endpoint_private_access = true
-    # endpoint_public_access  = false
   }
 
   tags = {
